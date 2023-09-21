@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeProduct } from './features/Product';
+import './Products.css';  
 
 function DisplayProducts() {
   const products = useSelector((state) => state.product.value);
@@ -15,8 +16,7 @@ function DisplayProducts() {
       <h2 className="text-xl font-bold mb-4">Book List</h2>
       <table className="min-w-full table-auto">
         <thead>
-          <tr className="bg-gray-100" >
-            <div className='pd-10'></div>
+          <tr className="bg-gray-100">
             <th className="border p-2">Book ID</th>
             <th className="border p-2">Book Name</th>
             <th className="border p-2">Book Description</th>
@@ -31,9 +31,9 @@ function DisplayProducts() {
               <td className="border p-2">{product.name}</td>
               <td className="border p-2">{product.description}</td>
               <td className="border p-2">{product.category}</td>
-              <td className="border p-3">
+              <td className="border p-2">
                 <button
-                  class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-semibold py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-300"
+                  className="bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-2 rounded focus:outline-none focus:ring-2 focus:ring-red-300"
                   onClick={() => handleRemove(product.id)}
                 >
                   Remove

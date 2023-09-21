@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import "./Products.css";
 import { useDispatch, useSelector } from 'react-redux';
 import { addProduct, removeProduct, editProduct, removeALl } from './features/Product';
 import DisplayProducts from './DisplayProducts';
-
+import { Link } from 'react-router-dom';
 const Products = () => {
   const product = useSelector((state) => state.product.value);
   const dispatch = useDispatch();
@@ -116,8 +117,9 @@ const Products = () => {
           Remove All
         </button>
       </div>
-
-      <DisplayProducts />
+<Link to="/345"><button>Home</button></Link>
+      
+      {/* <DisplayProducts /> */}
     </div>
   );
 };

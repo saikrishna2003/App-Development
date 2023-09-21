@@ -24,7 +24,7 @@ export const productSlice = createSlice({
     name: 'product',
     initialState: {
         value: [
-            { id: '1', name: 'name', description: 'des', category: 'furniture' },
+            { id: '1', name: 'name1', description: 'des1', category: 'book1' },
             // Add more initial data here if needed
         ],
     },
