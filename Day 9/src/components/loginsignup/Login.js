@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
-
+import { UseSelector,useDispatch } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from 'react-router-dom';
-
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import {validate} from "./validate"; 
 import {notify} from "./toast";
 import styles from "./SignUp.module.css"
+import { login } from '../../features/User';
 
 const Login = () => {
-
+    const dispatch = useDispatch();
+    const history = useHistory();
     const [data , setData] = useState({
         email:"",
         password:"",
@@ -31,6 +33,8 @@ const Login = () => {
     }
 
     const submitHandler =event =>{
+        dispatch(login({name:data.email}));
+        history.push('/home');
         event.preventDefault();
         if(!Object.keys(errors).length){
             notify ("Your loged up  Successfully","success")
@@ -50,7 +54,7 @@ const Login = () => {
 
                 <div className={styles.formField} >
                     <label>Email</label>
-                    <input 
+                    <input style={{color:'black'}}
                         className={(errors.email && touched.email) ? styles.uncompleted : styles.formInput}
                         type='text'  
                         name='email' 
@@ -62,7 +66,7 @@ const Login = () => {
 
                 <div className={styles.formField} >
                     <label>Password</label>
-                    <input
+                    <input style={{color:'black'}}
                         className={(errors.password && touched.password) ? styles.uncompleted : styles.formInput}
                         type='password'  
                         name='password' 
@@ -74,7 +78,7 @@ const Login = () => {
 
                 <div className={styles.formButtons}>
                     <Link to="/signup">Sign Up</Link>
-                   <Link to="/home" ><button type='submit'>Login</button></Link>
+                <button type='submit'>Login</button>
                 </div>
             </form>
             <ToastContainer />

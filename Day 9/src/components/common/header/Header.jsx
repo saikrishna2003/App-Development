@@ -1,9 +1,11 @@
 import React, { useState } from "react"
 import { navList } from "../../data/Data"
 import "./header.css"
+import { UseSelector, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 
 const Header = () => {
+  const user = useSelector((state)=>state.user.value)
   const [show, setShow] = useState(false)
 
   window.addEventListener("scroll", function () {
@@ -26,6 +28,7 @@ const Header = () => {
                   <Link to={nav.path}>{nav.text}</Link>
                 </li>
               ))}
+            <h1>{user.name}</h1>
             </ul>
           </div>
           {/* ------  search box --------- */}
