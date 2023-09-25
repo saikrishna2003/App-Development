@@ -28,7 +28,7 @@ const Header = () => {
                   <Link to={nav.path}>{nav.text}</Link>
                 </li>
               ))}
-            <h1>{user.name}</h1>
+            <p><h3>{user.name}</h3></p>
             </ul>
           </div>
           {/* ------  search box --------- */}
