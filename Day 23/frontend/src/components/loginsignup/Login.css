@@ -1,0 +1,49 @@
+.conta {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin-top: 20%;
+}
+
+.ro {
+  margin: 10px 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 0%;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}

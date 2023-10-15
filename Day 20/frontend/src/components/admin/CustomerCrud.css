@@ -1,0 +1,90 @@
+/* CustomerCrud.css */
+
+/* Styles for the container */
+.bigcontainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Styles for the form */
+  form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styles for form labels */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Styles for form inputs */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Styles for buttons */
+  .btn-primary,
+  .btn-warning {
+    background-color: #5a8bc0;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 24px;
+    margin-left: 4px;
+    border: none;
+    margin-top: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-warning:hover {
+    background-color: #00e03f;
+  }
+  
+  /* Styles for the table */
+  table {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  /* Styles for table headers */
+  table th {
+    background-color: #343a40 !important;
+  }
+  
+  /* Styles for table rows */
+  table td {
+    padding: 8px;
+  }
+  
+  /* Styles for "Edit" and "Delete" buttons in the table */
+  table .btn-warning,
+  table .btn-danger {
+    padding: 10px 20px;
+    margin-left: 2px;
+    border-radius: 8px;
+  }
+  
+  table .btn-warning:hover {
+    background-color: #e0a800;
+  }
+  
+  table .btn-danger:hover {
+    background-color: #c82333;
+    color: #fff;
+  }
+  
