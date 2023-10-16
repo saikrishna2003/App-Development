@@ -1,0 +1,51 @@
+/* games.css */
+
+/* Style the container for the game cards */
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  /* Style the individual game cards */
+  .cardu {
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s;
+  }
+  
+  .cardu:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Style the game image */
+  .gameImage {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /* Style the game card content */
+  .gameCard_content {
+    padding: 15px;
+  }
+  
+  /* Style the game title */
+  .gameTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Style the game description */
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+  

@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+.education-page {
+  min-height: 100vh;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Raleway", Arial, sans-serif;
+  padding: 30px; /* Add some spacing around the grid */
+}
+
+.grid-row {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px; /* Add spacing between rows */
+}
+
+.card {
+  padding-left: 2px;
+  justify-content: space-between;
+  position: relative;
+  width: calc(33.33% - 20px); /* 3 cards per row (adjust as needed) */
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 1s;
+  background: beige;
+  cursor: pointer;
+  margin-top: 21px; /* Add spacing between cards */
+  margin-right: 21px; /* Add spacing between cards */
+  margin-bottom: 20px; /* Add spacing between cards and rows */
+  margin-left: 100px; /* Add spacing between cards and rows */
+  flex-basis: calc(25% - 20px); /* Adjust flex-basis to control card width */
+  box-sizing: border-box; /* Ensure padding and border don't affect card width */
+}
+
+.contentImage {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  height: 320px;
+}
+
+.contentCard_content {
+  padding: 10px 20px;
+  text-align: center;
+  opacity: 0;
+  transition: 0.9s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: beige;
+  border-radius: 0 0 10px 10px;
+  transform: translateY(100%);
+}
+
+.card:hover .contentCard_content {
+  opacity: 1;
+  transform: translateY(0);
+  overflow: hidden;
+}
+
+.contentCard_content h2 {
+  color: #000000;
+}
+
+p {
+  color: rgb(45, 44, 44);
+}

@@ -1,0 +1,78 @@
+/* Login.css */
+
+/* Center the container */
+.conta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Children's theme styles */
+.conta {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.conta h2 {
+  font-size: 24px;
+  color: #007bff; /* Blue color */
+  text-align: center;
+}
+
+.conta hr {
+  border: 2px solid #ff6600; /* Orange color */
+  margin: 20px 0;
+}
+
+.conta label {
+  font-size: 18px;
+  color: #333;
+}
+
+.conta input[type="email"],
+.conta input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.conta button {
+  background-color: #ff6600; /* Orange color */
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.conta a {
+  text-decoration: none;
+  color: #009900; /* Green color */
+}
+
+.conta .alert {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.conta button.login-button {
+  background-color: #ff6600;
+}
+
+.conta a.signup-link {
+  color: #009900;
+}
+
+.conta a.admin-login-link {
+  color: #ff6600;
+}

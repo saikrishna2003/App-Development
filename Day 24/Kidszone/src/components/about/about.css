@@ -1,0 +1,38 @@
+/* about.css */
+.about-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.about-image {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.about-us-container h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.about-us-container h2 {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.about-us-container p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Adjust font sizes, colors, and other styles as needed */
+
+/* Style for the Header and Footer components */
+/* You may need to add specific styles for these components */
